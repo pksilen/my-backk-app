@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: my-backk-app API
+  description: ""
+  version: 1.0.1
+servers:
+  - url: http://localhost:3001/my-backk-app.default
+    description: Local development server
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    openId: null
+  schemas: {}
+security:
+  - bearerAuth: []
+paths: {}

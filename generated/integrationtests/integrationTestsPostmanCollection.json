@@ -1,0 +1,683 @@
+{
+    "info": {
+        "name": "my-backk-app tests",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lKbVltUmlOR1UwWVMwMlpUa3pMVFJpTURndFlURmxOeTB3WWpkaVpEQTROVEl3WVRZaUxDSnBjM01pT2lKb2RIUndPaTh2Ykc5allXeG9iM04wT2pnd09EQXZZWFYwYUM5eVpXRnNiWE12ZEdWemRDSXNJbkpsWVd4dFgyRmpZMlZ6Y3lJNmV5SnliMnhsY3lJNld5SjJhWFJxWVVGa2JXbHVJbDE5TENKcFlYUWlPakUyTkRFME5UYzJNRE45LnBFdmRIU2l0ZXdXMEpUYjJiNnhNNzdaZ3EtSkZ6cUg0RS01LVBwQzVfM1k=",
+                "type": "string"
+            }
+        ]
+    },
+    "item": [
+        {
+            "name": "metadataService.getServicesMetadata",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/my-backk-app.default/metadataService.getServicesMetadata",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001",
+                    "path": [
+                        "my-backk-app.default",
+                        "metadataService.getServicesMetadata"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "metadataService.getOpenApiSpec",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/my-backk-app.default/metadataService.getOpenApiSpec",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001",
+                    "path": [
+                        "my-backk-app.default",
+                        "metadataService.getOpenApiSpec"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Cleanup (0)",
+            "item": [
+                {
+                    "name": "exampleService.deleteAllExampleEntities (0.1)",
+                    "request": {
+                        "description": {
+                            "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"deleteAllExampleEntities\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{}\n```\n### Validations\n```\n{}\n```\n",
+                            "type": "text/markdown"
+                        },
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:3001/my-backk-app.default/exampleService.deleteAllExampleEntities",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3001",
+                            "path": [
+                                "my-backk-app.default",
+                                "exampleService.deleteAllExampleEntities"
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "event": [
+                        {
+                            "id": "exampleService.deleteAllExampleEntities",
+                            "listen": "test",
+                            "script": {
+                                "id": "exampleService.deleteAllExampleEntities",
+                                "exec": [
+                                    "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "livenessCheckService (1)",
+            "item": [
+                {
+                    "name": "isMicroserviceAlive (1.1)",
+                    "item": [
+                        {
+                            "name": "livenessCheckService.isMicroserviceAlive (1.1.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"livenessCheckService\",\n    \"functionName\": \"isMicroserviceAlive\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{}\n```\n### Validations\n```\n{}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [],
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/livenessCheckService.isMicroserviceAlive",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "livenessCheckService.isMicroserviceAlive"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "livenessCheckService.isMicroserviceAlive",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "livenessCheckService.isMicroserviceAlive",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "readinessCheckService (2)",
+            "item": [
+                {
+                    "name": "isMicroserviceReady (2.1)",
+                    "item": [
+                        {
+                            "name": "readinessCheckService.isMicroserviceReady (2.1.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"readinessCheckService\",\n    \"functionName\": \"isMicroserviceReady\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{}\n```\n### Validations\n```\n{}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [],
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/readinessCheckService.isMicroserviceReady",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "readinessCheckService.isMicroserviceReady"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "readinessCheckService.isMicroserviceReady",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "readinessCheckService.isMicroserviceReady",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "startupCheckService (3)",
+            "item": [
+                {
+                    "name": "isMicroserviceStarted (3.1)",
+                    "item": [
+                        {
+                            "name": "startupCheckService.isMicroserviceStarted (3.1.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"startupCheckService\",\n    \"functionName\": \"isMicroserviceStarted\",\n    \"functionDocumentation\": \" noinspection FunctionWithMoreThanThreeNegationsJS\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{}\n```\n### Validations\n```\n{}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [],
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/startupCheckService.isMicroserviceStarted",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "startupCheckService.isMicroserviceStarted"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "startupCheckService.isMicroserviceStarted",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "startupCheckService.isMicroserviceStarted",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "exampleService (4)",
+            "item": [
+                {
+                    "name": "deleteAllExampleEntities (4.1)",
+                    "item": [
+                        {
+                            "name": "exampleService.deleteAllExampleEntities (4.1.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"deleteAllExampleEntities\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{}\n```\n### Validations\n```\n{}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [],
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.deleteAllExampleEntities",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.deleteAllExampleEntities"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.deleteAllExampleEntities",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.deleteAllExampleEntities",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "createExampleEntity (4.2)",
+                    "item": [
+                        {
+                            "name": "exampleService.createExampleEntity (4.2.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"createExampleEntity\",\n    \"argType\": \"ExampleEntity\",\n    \"returnValueType\": \"PromiseErrorOr<One<ExampleEntity>>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"ExampleEntity\": {\n        \"readUpdate _id\": \"string\",\n        \"readWrite exampleProperty\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"ExampleEntity\": {\n        \"exampleProperty\": [\n            \"isAnyString()\",\n            \"maxLength(64)\"\n        ],\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"exampleProperty\": \"abc\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.createExampleEntity",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.createExampleEntity"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.createExampleEntity",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.createExampleEntity",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});",
+                                            "let response = pm.response.json(); response = response.data || response;",
+                                            "try {",
+                                            "  pm.collectionVariables.set(\"exampleId\", response._id)",
+                                            "} catch(error) {\n}",
+                                            "pm.test(\"response._id\", function () {\n  if (response._id !== undefined && pm.collectionVariables.get('exampleId') !== undefined) \n   return pm.expect(response._id).to.eql(pm.collectionVariables.get('exampleId'));\n  else \n    return true; \n})",
+                                            "pm.test(\"response.exampleProperty\", function () {\n  if (response.exampleProperty !== undefined ) \n   return pm.expect(response.exampleProperty).to.eql('abc');\n  else \n    return true; \n})"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "getExampleEntities (4.3)",
+                    "item": [
+                        {
+                            "name": "exampleService.getExampleEntities (4.3.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"getExampleEntities\",\n    \"argType\": \"DefaultPostQueryOperationsImpl\",\n    \"returnValueType\": \"PromiseErrorOr<Many<ExampleEntity>>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"ExampleEntity\": {\n        \"readUpdate _id\": \"string\",\n        \"readWrite exampleProperty\": \"string\"\n    },\n    \"DefaultPostQueryOperationsImpl\": {\n        \"includeResponseFields\": \"string[] = []\",\n        \"excludeResponseFields\": \"string[] = []\",\n        \"sortBys\": \"SortBy[] = [{\\\"subEntityPath\\\":\\\"*\\\",\\\"fieldName\\\":\\\"_id\\\",\\\"sortDirection\\\":\\\"ASC\\\"},{\\\"subEntityPath\\\":\\\"*\\\",\\\"fieldName\\\":\\\"id\\\",\\\"sortDirection\\\":\\\"ASC\\\"}]\",\n        \"paginations\": \"Pagination[] = [{\\\"subEntityPath\\\":\\\"*\\\",\\\"pageNumber\\\":1,\\\"pageSize\\\":50}]\",\n        \"currentPageTokens\": \"CurrentPageToken[] = []\"\n    },\n    \"SortBy\": {\n        \"subEntityPath\": \"string\",\n        \"fieldName\": \"string\",\n        \"sortDirection\": \"('ASC'|'DESC')\"\n    },\n    \"Pagination\": {\n        \"subEntityPath\": \"string\",\n        \"pageNumber\": \"integer\",\n        \"pageSize\": \"integer\"\n    },\n    \"CurrentPageToken\": {\n        \"subEntityPath\": \"string\",\n        \"currentPageToken\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"ExampleEntity\": {\n        \"exampleProperty\": [\n            \"isAnyString()\",\n            \"maxLength(64)\"\n        ],\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    },\n    \"DefaultPostQueryOperationsImpl\": {\n        \"includeResponseFields\": [\n            \"arrayUnique()\",\n            \"arrayMaxSize(500)\",\n            \"arrayMinSize(0)\",\n            \"isArray()\",\n            \"maxLengthAndMatches(512, /^[a-zA-Z_]([a-zA-Z0-9_.])+$/, { each: true })\"\n        ],\n        \"excludeResponseFields\": [\n            \"arrayUnique()\",\n            \"arrayMaxSize(100)\",\n            \"arrayMinSize(0)\",\n            \"isArray()\",\n            \"maxLengthAndMatches(512, /^[a-zA-Z_]([a-zA-Z0-9_.])+$/, { each: true })\"\n        ],\n        \"sortBys\": [\n            \"arrayMaxSize(25)\",\n            \"arrayMinSize(0)\",\n            \"isArray()\"\n        ],\n        \"paginations\": [\n            \"arrayMaxSize(100)\",\n            \"arrayMinSize(0)\",\n            \"isArray()\"\n        ],\n        \"currentPageTokens\": [\n            \"arrayMaxSize(100)\",\n            \"arrayMinSize(0)\",\n            \"isArray()\"\n        ]\n    },\n    \"SortBy\": {\n        \"subEntityPath\": [\n            \"maxLengthAndMatches(2048, /^([a-zA-Z_][a-zA-Z0-9_.]*|\\\\*|)$/)\"\n        ],\n        \"fieldName\": [\n            \"maxLengthAndMatches(512, /^[a-zA-Z_][a-zA-Z0-9_.]*$/)\"\n        ],\n        \"sortDirection\": [\n            \"isIn([\\\"ASC\\\",\\\"DESC\\\"])\"\n        ]\n    },\n    \"Pagination\": {\n        \"subEntityPath\": [\n            \"maxLengthAndMatches(2048, /^([a-zA-Z_][a-zA-Z0-9_.]*|\\\\*|)$/)\"\n        ],\n        \"pageNumber\": [\n            \"max(100)\",\n            \"min(1)\",\n            \"isInt()\"\n        ],\n        \"pageSize\": [\n            \"max(100)\",\n            \"min(1)\",\n            \"isInt()\"\n        ]\n    },\n    \"CurrentPageToken\": {\n        \"subEntityPath\": [\n            \"maxLengthAndMatches(2048, /^([a-zA-Z_][a-zA-Z0-9_.]*|\\\\*|)$/)\"\n        ],\n        \"currentPageToken\": [\n            \"maxLength(64)\",\n            \"isAlphanumeric()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"includeResponseFields\": [],\n    \"excludeResponseFields\": [],\n    \"sortBys\": [\n        {\n            \"subEntityPath\": \"*\",\n            \"fieldName\": \"_id\",\n            \"sortDirection\": \"ASC\"\n        },\n        {\n            \"subEntityPath\": \"*\",\n            \"fieldName\": \"id\",\n            \"sortDirection\": \"ASC\"\n        }\n    ],\n    \"paginations\": [\n        {\n            \"subEntityPath\": \"*\",\n            \"pageNumber\": 1,\n            \"pageSize\": 50\n        }\n    ],\n    \"currentPageTokens\": []\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.getExampleEntities",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.getExampleEntities"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.getExampleEntities",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.getExampleEntities",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});",
+                                            "let response = pm.response.json(); response = response.data || response;",
+                                            "pm.test(\"response[0]._id\", function () {\n  if (response[0] !== undefined && response[0]._id !== undefined) \n   return pm.expect(response[0]._id).to.eql(pm.collectionVariables.get('exampleId'));\n  else \n    return true; \n})",
+                                            "pm.test(\"response[0].exampleProperty\", function () {\n  if (response[0] !== undefined && response[0].exampleProperty !== undefined) \n   return pm.expect(response[0].exampleProperty).to.eql('abc');\n  else \n    return true; \n})"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "getExampleEntity (4.4)",
+                    "item": [
+                        {
+                            "name": "exampleService.getExampleEntity (4.4.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"getExampleEntity\",\n    \"argType\": \"_Id\",\n    \"returnValueType\": \"PromiseErrorOr<One<ExampleEntity>>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"ExampleEntity\": {\n        \"readUpdate _id\": \"string\",\n        \"readWrite exampleProperty\": \"string\"\n    },\n    \"_Id\": {\n        \"_id\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"ExampleEntity\": {\n        \"exampleProperty\": [\n            \"isAnyString()\",\n            \"maxLength(64)\"\n        ],\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    },\n    \"_Id\": {\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"_id\": \"{{exampleId}}\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.getExampleEntity",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.getExampleEntity"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.getExampleEntity",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.getExampleEntity",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});",
+                                            "let response = pm.response.json(); response = response.data || response;",
+                                            "pm.test(\"response._id\", function () {\n  if (response._id !== undefined && pm.collectionVariables.get('exampleId') !== undefined) \n   return pm.expect(response._id).to.eql(pm.collectionVariables.get('exampleId'));\n  else \n    return true; \n})",
+                                            "pm.test(\"response.exampleProperty\", function () {\n  if (response.exampleProperty !== undefined ) \n   return pm.expect(response.exampleProperty).to.eql('abc');\n  else \n    return true; \n})"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "updateExampleEntity (4.5)",
+                    "item": [
+                        {
+                            "name": "exampleService.updateExampleEntity (4.5.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"updateExampleEntity\",\n    \"argType\": \"ExampleEntity\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"ExampleEntity\": {\n        \"readUpdate _id\": \"string\",\n        \"readWrite exampleProperty\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"ExampleEntity\": {\n        \"exampleProperty\": [\n            \"isAnyString()\",\n            \"maxLength(64)\"\n        ],\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"_id\": \"{{exampleId}}\",\n    \"exampleProperty\": \"abcd\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.updateExampleEntity",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.updateExampleEntity"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.updateExampleEntity",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.updateExampleEntity",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "exampleService.getExampleEntity (4.5.2)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"getExampleEntity\",\n    \"argType\": \"_Id\",\n    \"returnValueType\": \"PromiseErrorOr<One<ExampleEntity>>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"ExampleEntity\": {\n        \"readUpdate _id\": \"string\",\n        \"readWrite exampleProperty\": \"string\"\n    },\n    \"_Id\": {\n        \"_id\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"ExampleEntity\": {\n        \"exampleProperty\": [\n            \"isAnyString()\",\n            \"maxLength(64)\"\n        ],\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    },\n    \"_Id\": {\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"_id\": \"{{exampleId}}\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.getExampleEntity",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.getExampleEntity"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.getExampleEntity",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.getExampleEntity",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});",
+                                            "let response = pm.response.json(); response = response.data || response;",
+                                            "pm.test(\"response._id\", function () {\n  if (response._id !== undefined && pm.collectionVariables.get('exampleId') !== undefined) \n   return pm.expect(response._id).to.eql(pm.collectionVariables.get('exampleId'));\n  else \n    return true; \n})",
+                                            "pm.test(\"response.exampleProperty\", function () {\n  if (response.exampleProperty !== undefined ) \n   return pm.expect(response.exampleProperty).to.eql('abcd');\n  else \n    return true; \n})"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "deleteExampleEntity (4.6)",
+                    "item": [
+                        {
+                            "name": "WHEN exampleService.deleteExampleEntity (4.6.1)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"deleteExampleEntity\",\n    \"argType\": \"_Id\",\n    \"returnValueType\": \"PromiseErrorOr<null>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"_Id\": {\n        \"_id\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"_Id\": {\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"_id\": \"{{exampleId}}\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.deleteExampleEntity",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.deleteExampleEntity"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.deleteExampleEntity",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.deleteExampleEntity",
+                                        "exec": [
+                                            "pm.test(\"Status code is 200\", function () {\n  pm.response.to.have.status(200);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "THEN example is not found (4.6.2)",
+                            "request": {
+                                "description": {
+                                    "content": "### Contract\n```\n{\n    \"serviceName\": \"exampleService\",\n    \"functionName\": \"getExampleEntity\",\n    \"argType\": \"_Id\",\n    \"returnValueType\": \"PromiseErrorOr<One<ExampleEntity>>\",\n    \"errors\": []\n}\n```\n### Types\n```\n{\n    \"ExampleEntity\": {\n        \"readUpdate _id\": \"string\",\n        \"readWrite exampleProperty\": \"string\"\n    },\n    \"_Id\": {\n        \"_id\": \"string\"\n    }\n}\n```\n### Validations\n```\n{\n    \"ExampleEntity\": {\n        \"exampleProperty\": [\n            \"isAnyString()\",\n            \"maxLength(64)\"\n        ],\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    },\n    \"_Id\": {\n        \"_id\": [\n            \"maxLengthAndMatches(24, /^[a-f\\\\d]{1,24}$/)\",\n            \"isStringOrObjectId()\"\n        ]\n    }\n}\n```\n",
+                                    "type": "text/markdown"
+                                },
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "name": "Content-Type",
+                                        "value": "application/json",
+                                        "type": "text"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"_id\": \"{{exampleId}}\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "http://localhost:3001/my-backk-app.default/exampleService.getExampleEntity",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "3001",
+                                    "path": [
+                                        "my-backk-app.default",
+                                        "exampleService.getExampleEntity"
+                                    ]
+                                }
+                            },
+                            "response": [],
+                            "event": [
+                                {
+                                    "id": "exampleService.getExampleEntity",
+                                    "listen": "test",
+                                    "script": {
+                                        "id": "exampleService.getExampleEntity",
+                                        "exec": [
+                                            "pm.test(\"Status code is 404\", function () {\n  pm.response.to.have.status(404);\n});"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
